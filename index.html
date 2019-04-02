@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Dealership</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Super Cars For Sale</h1>
+    </header>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#new">New Inventory</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div id="cover">
+        <img id="coverImg" src="./images/ferrari.jpg" alt="Cover Image of Car">
+    </div>
+    <br>
+    <h2 id="new">New Inventory</h2>
+    <div id=showcase>
+        <img class="showcaseImg" src="./images/lamborghini.jpg" width=250px>
+        <img class="showcaseImg" src="./images/lamborghini.jpg" width=250px>
+        <img class="showcaseImg" src="./images/lamborghini.jpg" width=250px>
+        <img class="showcaseImg" src="./images/lamborghini.jpg" width=250px>
+    </div>
+    <br><br><br>
+    <div id="formArea">
+    <h2 id="search">Search Inventory</h2>
+        <form id="searchForm">
+            <select>
+                <option value="Lamborghini">Lamborghini</option>
+                <option value="Ferrari">Ferrari</option>
+                <option value="Bugatti">Bugatti</option>
+                <option value="Mclaren">Mclaren</option>
+            </select>
+            <select>
+                <option value="low">Below $100,000</option>
+                <option value="medium">$100k - $200k</option>
+                <option value="high">$200k-500k</option>
+                <option value="very high">500k +</option>
+            </select>
+            <input id="searchbtn" type="submit">
+        </form>
+    </div>
+    <br>
+    <h2 id="about">About Us</h2>
+    <p id="aboutTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus elit eu magna rutrum, nec lobortis mi porttitor. Cras ultricies erat ut sem pulvinar, vitae tincidunt libero tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis eget volutpat libero. Nulla ut quam vitae dolor pharetra ullamcorper. Nullam cursus, mauris pellentesque fringilla aliquam, leo quam volutpat diam, in hendrerit sapien enim ac ante. Morbi mollis tempor odio et semper. Maecenas non eleifend risus.
+    <br><br>
+    Curabitur faucibus porta ante sit amet suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam commodo neque vitae lacinia sagittis. Praesent ac dui vulputate, facilisis elit non, tincidunt lacus. Vestibulum mauris diam, pulvinar id lacus id, pulvinar dictum enim. Cras vel nisl aliquam nisl ultrices dapibus ut vel turpis. Etiam sodales quam eget sapien posuere convallis. Proin scelerisque vitae tortor eget sodales. Nullam ultricies risus vitae diam varius bibendum. Aliquam malesuada blandit magna, id sollicitudin dolor fermentum eget. Curabitur nec convallis justo. Cras at mauris sed felis fermentum porta sit amet id purus. Aliquam vel lacus vulputate, faucibus neque ut, vulputate augue.</p>
+    <br>
+    <h2 id="contact">Contact Us</h2>
+    <form id="contactForm">
+        <label for="name">Name</label><br>
+        <input type="text"><br>
+        <label for="email">Email</label><br>
+        <input type="text"><br>
+        <label for="phone">Number</label><br>
+        <input type="text"><br>
+        <label for="message">Message</label><br>
+        <textarea style="height:200px"></textarea><br>
+        <button id="contactbtn" type="submit">Send</button>
+    </form>
+    <br>
+    <footer>
+<p id="pfoot">Super Cars for Sale &copy; 2019</p>
+    </footer>
+</body>
+</html>
