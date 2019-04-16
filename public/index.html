@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gen X Cars</title>
+
+    <link rel="shortcut icon" href="./images/ten_eHn_icon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <header>
+        <h1>Gen X Cars</h1>
+        <h2>An All-Electric Car Dealership</h2>
+    </header>
+    <ul>
+        <li><a class="nav" href="#">Home</a></li>
+        <li><a class="nav" href="#new">Just In</a></li>
+        <li><a class="nav" href="#search">Search</a></li>
+        <li><a class="nav" href="#about">Who We Are</a></li>
+        <li><a class="nav" href="#staff">Staff</a></li>
+        <li><a class="nav" href="#contact">Contact</a></li>
+    </ul>
+    <div id="cover">
+        <img id="coverImg" src="./images/electric.jpg" alt="Cover Image of Car">
+    </div>
+    <br>
+    <h3 id="new">Just In</h3>
+    <div id=showcase>
+        <div class="container1">
+            <img class="showcaseImg" src="./images/electric1.jpg" width=250px height=210px>
+            <div class="middle">
+                <div class="text"><a href="#">EV One</a></div>
+            </div>
+        </div>
+        <div class="container1">
+            <img class="showcaseImg" src="./images/electric3.jpg" width=250px height=210px>
+            <div class="middle">
+                <div class="text"><a href="#">EV Two</a></div>
+            </div>
+        </div>
+        <div class="container1">
+            <img class="showcaseImg" src="./images/electric2.jpg" width=250px height=210px>
+            <div class="middle">
+                <div class="text"><a href="#">EV Three</a></div>
+            </div>
+        </div>
+        <div class="container1">
+            <img class="showcaseImg" src="./images/electric4.jpg" width=250px height=210px>
+            <div class="middle">
+                <div class="text"><a href="#">EV Four</a></div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div id="formArea">
+    <h3 id="search" style="color: white;">Search Inventory</h3>
+        <form id="searchForm" onSubmit='search()'>
+            <select id="manufacturer">
+                <option value="BYD">BYD</option>
+                <option value="Changjiang">Changjiang</option>
+                <option value="Dongfeng">Dongfeng</option>
+                <option value="Qoros">Qoros</option>
+                <option value="Brilliance">Brilliance</option>
+                <option value="Changfeng ">Changfeng </option>
+                <option value="Citroen">Citroen</option>
+            </select>
+            <select id="price">
+                <option value="Under $10,000">Under $10,000</option>
+                <option value="$10,000 - $20,000">$10,000 - $20,000</option>
+                <option value="$20,000 - $30,000">$20,000 - $30,000</option>
+                <option value="Above $30,000">Above $30,000</option>
+            </select>
+            <input id="searchbtn" type="submit">
+        </form>
+    </div>
+    <br>
+    <h3 id="about">Who We Are</h3>
+    <h4>Gen X Cars’ mission is to accelerate the world’s transition to sustainable energy.</h4>
+    <p id="aboutTxt">Gen X Cars was founded in 2019 by a group of engineers who wanted to prove that people didn’t need to compromise to drive electric – that electric vehicles can be better, quicker and more fun to drive than gasoline cars. Today, Gen X Cars sells not only all-electric vehicles but also infinitely scalable clean energy generation and storage products. Gen X Cars believes the faster the world stops relying on fossil fuels and moves towards a zero-emission future, the better.
+    <br><br>
+    To create an entire sustainable energy ecosystem, Gen X Cars also sells a unique set of energy solutions, Powerwall, Powerpack and Solar Roof, enabling homeowners, businesses, and utilities to manage renewable energy generation, storage, and consumption. Supporting Gen X Cars’ automotive and energy products is Gigafactory 1 – a facility designed to significantly showcase battery cells.
+    <br><br>
+    And this is just the beginning. With Gen X Cars selling its most affordable car yet, Gen X Cars continues to make products accessible and affordable to more and more people, ultimately accelerating the advent of clean transport and clean energy production. Electric cars, batteries, and renewable energy generation and storage already exist independently, but when combined, they become even more powerful – that’s the future we want.</p>
+    <br>
+
+    <h3 id="staff">Staff</h3>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="./images/ceo.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2 style="text-align: left;">Jane Doe</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button" onClick="contact()">Contact</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="./images/sales.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2 style="text-align: left;">John Doe</h2>
+              <p class="title">Sales Director</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button" onClick="contact()">Contact</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="./images/mechanic.jpg" alt="John" style="width:100%">
+            <div class="container">
+              <h2 style="text-align: left;">Mike Ross</h2>
+              <p class="title">Lead Mechanic</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button" onClick="contact()">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- <div id="contactDiv"> -->
+        <h3 id="contact">Contact Us</h3>
+        <form id="contactForm">
+            <label class="contactLabel" for="name">Name</label>
+            <input type="text" style="width: 100%;" required><br>
+            <label class="contactLabel" for="email">Email</label>
+            <input type="text" style="width: 100%;" required><br>
+            <label class="contactLabel" for="phone" required>Number</label>
+            <input type="text" style="width: 100%;"><br>
+            <label class="contactLabel" for="message" required>Message</label>
+            <textarea style="height:200px; width: 100%;"></textarea><br>
+            <button id="contactbtn" type="submit">Send</button>
+        </form>
+    <!-- </div> -->
+    <br><br><br><br>
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=One%20Infinite%20Loop%2C%20Cupertino%2C%20CA%2095014&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com">emojilib.com</a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:500px;}</style></div>
+    
+    <footer>
+<p id="pfoot"> Gen X Cars &copy; 2019</p>
+    </footer>
+</body>
+</html>
